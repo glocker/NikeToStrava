@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send({ message: 'Hello WWW!' });
 });
 
+app.get('/backend', (req, res) => {
+    res.send({ message: 'Its comming from backend' });
+});
+
 app.listen(3333, () => {
     console.log('Application listening on port 3333!');
 });
