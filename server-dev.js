@@ -13,6 +13,10 @@ const vite = await createServer({
 
 app.use(vite.middlewares);
 
+app.post('/', (req, res) => {
+    res.send({token: req.headers.token});
+});
+
 app.use('*', async (req, res) => {
     const url = req.originalUrl;
 
