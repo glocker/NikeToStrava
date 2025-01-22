@@ -1,12 +1,11 @@
 import { renderToString } from "react-dom/server";
 import App from "./app";
-require("dotenv").config();
-
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const nikeService = require("./service/nike");
-const stravaService = require("./service/strava");
+import "dotenv/config.js";
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import nikeService from "./service/nike";
+import stravaService from "./service/strava";
 
 const app = express();
 app.use(bodyParser.json());
