@@ -72,9 +72,9 @@ app.post("/export/strava", async (req, res) => {
   }
 });
 
-// Start server
-const PORT = 3000;
-app.listen(PORT, () => console.log(`Server listening to port ${PORT}`));
+// Start server (unnecessary)
+// const PORT = 3000;
+// app.listen(PORT, () => console.log(`Server listening to port ${PORT}`));
 
 export const render = () => {
   return renderToString(<App />);
